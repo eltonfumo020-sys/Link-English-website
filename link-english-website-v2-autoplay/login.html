@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Log in — Link English</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <div class="login-language-control">
+    <select
+        id="languageSelect"
+        class="language-select"
+        aria-label="Choose language"
+    >
+        <option value="en">🇬🇧 English</option>
+        <option value="pt">🇵🇹 Português</option>
+        <option value="es">🇪🇸 Español</option>
+        <option value="fr">🇫🇷 Français</option>
+        <option value="ru">🇷🇺 Русский</option>
+    </select>
+</div>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body class="login-page">
+
+    <a class="brand login-brand" href="index.html">
+        <img class="brand-logo" src="assets/link-english-logo.png" alt="Link English">
+    </a>
+
+    <div class="login-language-control">
+        <select id="languageSelect" class="language-select" aria-label="Choose language">
+            <option value="en">🇬🇧 English</option>
+            <option value="pt">🇵🇹 Português</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="ru">🇷🇺 Русский</option>
+        </select>
+    </div>
+
+    <main class="login-layout">
+
+        <section class="login-promo">
+
+            <div class="section-kicker">WELCOME BACK</div>
+
+            <h1>
+                Your next step<br>
+                starts <span>here.</span>
+            </h1>
+
+            <p>
+                Pick up where you left off and keep building your English confidence.
+            </p>
+
+            <div class="login-deco">
+                LEARN <span>↗</span> GROW <span>↗</span> CONNECT
+            </div>
+
+        </section>
+
+        <section class="login-panel">
+
+            <div class="login-box">
+
+                <div class="section-kicker">STUDENT & STAFF PORTAL</div>
+
+                <h2>Sign in to Link English</h2>
+
+                <p class="login-muted">
+                    Use the account details provided by your administrator.
+                </p>
+
+                <form id="loginForm">
+
+                    <label for="email">Email address</label>
+
+                    <input
+                        id="email"
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                        autocomplete="username"
+                    >
+
+                    <label for="password">Password</label>
+
+                    <input
+                        id="password"
+                        type="password"
+                        placeholder="Enter your password"
+                        required
+                        autocomplete="current-password"
+                    >
+
+                    <button class="btn login-submit" type="submit">
+                        Sign in <span>↗</span>
+                    </button>
+
+                    <p id="loginMessage" class="login-message" role="status"></p>
+
+                </form>
+
+                <div class="login-help">
+                    Don't have an account yet?
+                    <a href="signup.html">Create an account</a>
+                    <br>
+                    Need help accessing your account? Contact Link English.
+                </div>
+
+                <a class="back-link" href="index.html">
+                    ← Back to Link English
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="translations.js"></script>
+    <script src="login.js"></script>
+
+</body>
+</html>

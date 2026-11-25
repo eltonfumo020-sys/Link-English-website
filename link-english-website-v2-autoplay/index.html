@@ -1,0 +1,579 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" data-i18n="meta.description"
+        content="Link English helps you develop English skills for real-life situations through practical lessons, expert guidance and flexible learning.">
+
+    <meta name="theme-color" content="#14213d">
+
+    <title>Link English — English for your next step</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="course-details.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a class="brand" href="#home" aria-label="Link English homepage">
+        <img class="brand-logo" src="assets/link-english-logo.png" alt="Link English">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false"
+        aria-controls="mainNav" type="button">
+        ☰
+    </button>
+
+    <nav id="mainNav">
+        <a href="#home" data-i18n="nav.home">Home</a>
+        <a href="#programs" data-i18n="nav.courses">Courses</a>
+        <a href="#method" data-i18n="nav.about">About us</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+
+        <select id="languageSelect" class="language-select"
+            aria-label="Choose language">
+            <option value="en">🇬🇧 English</option>
+            <option value="pt">🇵🇹 Português</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="ru">🇷🇺 Русский</option>
+        </select>
+
+        <a class="login-link" href="login.html" data-i18n="nav.login">Log in</a>
+
+        <a class="btn btn-small whatsapp-link" data-whatsapp
+            href="https://wa.me/258845441607">
+            <span data-i18n="nav.start">Start a Conversation</span> <span>↗</span>
+        </a>
+
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-copy">
+
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                <span data-i18n="hero.eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+            </div>
+
+            <h1 data-i18n="hero.title">One lesson<br>at a time.</h1>
+
+            <p class="hero-text" data-i18n="hero.description">
+                Confidence grows when you use English.
+                Build communication skills for real-life situations
+                through practical lessons and a welcoming
+                learning community.
+            </p>
+
+            <div class="google-evaluation" id="reviews">
+                <span class="google-g" aria-hidden="true">G</span>
+                <span>
+                    <strong data-i18n="hero.google">Google Review</strong>
+                    <span class="stars" aria-label="Five stars">★★★★★</span>
+                </span>
+            </div>
+
+            <div class="hero-actions">
+                <a class="btn whatsapp-link" data-whatsapp
+                    href="https://wa.me/258845441607">
+                    <span data-i18n="hero.trial">Book a trial lesson</span> <span>↗</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+            <div class="hero-image" role="img"
+                aria-label="Three students from different backgrounds having a friendly conversation in English"
+                data-i18n-attr="aria-label:hero.imageAlt">
+            </div>
+
+            <div class="speech-bubble bubble-one" data-i18n="hero.bubble1">
+                Hello!<br>How are you?
+            </div>
+
+            <div class="speech-bubble bubble-two" data-i18n="hero.bubble2">
+                I am fine, thanks!<br>And you?
+            </div>
+
+            <div class="speech-bubble bubble-three" data-i18n="hero.bubble3">
+                I am great!<br>Let's practise English!
+            </div>
+
+            <div class="hero-orbit"></div>
+        </div>
+
+        <div class="hero-bottom">
+            <span data-i18n="hero.bottom1">LEARN WITH CONFIDENCE</span>
+            <span class="scroll-line"></span>
+            <span data-i18n="hero.bottom2">SCROLL TO DISCOVER ↓</span>
+        </div>
+
+    </section>
+
+
+    <!-- COURSES -->
+    <section class="programs section-pad" id="programs">
+
+        <div class="programs-intro">
+            <div class="section-kicker" data-i18n="courses.kicker">FIND YOUR PATH</div>
+            <h2 data-i18n="courses.heading">Free Trial Lesson</h2>
+            <p data-i18n="courses.intro">
+                Explore our courses and find the one that best matches your goals.
+            </p>
+        </div>
+
+        <div class="carousel-wrap">
+
+            <button class="carousel-arrow carousel-prev" type="button"
+                aria-label="Previous courses" id="programPrev"
+                data-i18n-attr="aria-label:carousel.previous">‹</button>
+
+            <div class="program-carousel" id="programCarousel"
+                tabindex="0" aria-label="English courses"
+                data-i18n-attr="aria-label:carousel.label">
+
+                <!-- 01 A1 -->
+                <article class="course-card course-general">
+                    <div class="course-number" data-i18n="course.a1.number">01 · GENERAL ENGLISH</div>
+                    <div class="course-visual visual-general">
+                        <span>A1</span>
+                        <small data-i18n="course.general.tagline">Build your English step by step</small>
+                    </div>
+                    <div class="course-copy">
+                        <h3 data-i18n="course.general.title">General English</h3>
+                        <p data-i18n="course.a1.description">Five levels, from beginner to advanced: A1.</p>
+                        <a class="whatsapp-link" data-whatsapp
+                            data-message="Hello! I am interested in General English (A1–C1)."
+                            href="#contact">
+                            <span data-i18n="courses.learnMore">Learn more about this course</span> <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 02 A2 -->
+                <article class="course-card course-general">
+                    <div class="course-number" data-i18n="course.a2.number">02 · GENERAL ENGLISH</div>
+                    <div class="course-visual visual-general">
+                        <span>A2</span>
+                        <small data-i18n="course.general.tagline">Build your English step by step</small>
+                    </div>
+                    <div class="course-copy">
+                        <h3 data-i18n="course.general.title">General English</h3>
+                        <p data-i18n="course.a2.description">Five levels, from beginner to advanced: A2.</p>
+                        <a class="whatsapp-link" data-whatsapp
+                            data-message="Hello! I am interested in General English (A1–C1)."
+                            href="#contact">
+                            <span data-i18n="courses.learnMore">Learn more about this course</span> <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 03 B1 -->
+                <article class="course-card course-general">
+                    <div class="course-number" data-i18n="course.b1.number">03 · GENERAL ENGLISH</div>
+                    <div class="course-visual visual-general">
+                        <span>B1</span>
+                        <small data-i18n="course.general.tagline">Build your English step by step</small>
+                    </div>
+                    <div class="course-copy">
+                        <h3 data-i18n="course.general.title">General English</h3>
+                        <p data-i18n="course.b1.description">Five levels, from beginner to advanced: B1.</p>
+                        <a class="whatsapp-link" data-whatsapp
+                            data-message="Hello! I am interested in General English (A1–C1)."
+                            href="#contact">
+                            <span data-i18n="courses.learnMore">Learn more about this course</span> <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 04 B2 -->
+                <article class="course-card course-general">
+                    <div class="course-number" data-i18n="course.b2.number">04 · GENERAL ENGLISH</div>
+                    <div class="course-visual visual-general">
+                        <span>B2</span>
+                        <small data-i18n="course.general.tagline">Build your English step by step</small>
+                    </div>
+                    <div class="course-copy">
+                        <h3 data-i18n="course.general.title">General English</h3>
+                        <p data-i18n="course.b2.description">Five levels, from beginner to advanced: B2.</p>
+                        <a class="whatsapp-link" data-whatsapp
+                            data-message="Hello! I am interested in General English (A1–C1)."
+                            href="#contact">
+                            <span data-i18n="courses.learnMore">Learn more about this course</span> <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 05 C1 -->
+                <article class="course-card course-general">
+                    <div class="course-number" data-i18n="course.c1.number">05 · GENERAL ENGLISH</div>
+                    <div class="course-visual visual-general">
+                        <span>C1</span>
+                        <small data-i18n="course.general.tagline">Build your English step by step</small>
+                    </div>
+                    <div class="course-copy">
+                        <h3 data-i18n="course.general.title">General English</h3>
+                        <p data-i18n="course.c1.description">Five levels, from beginner to advanced: C1.</p>
+                        <a class="whatsapp-link" data-whatsapp
+                            data-message="Hello! I am interested in General English (A1–C1)."
+                            href="#contact">
+                            <span data-i18n="courses.learnMore">Learn more about this course</span> <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 06 BUSINESS 1 -->
+                <article class="course-card course-business">
+                    <div class="course-number" data-i18n="course.business1.number">06 · CAREER</div>
+                    <div class="course-visual visual-business">
+                        <span data-i18n="course.business1.title">Business English 1</span>
+                        <small data-i18n="course.business1.tagline">Professional communication</small>
+                    </div>
+                    <div class="course-copy">
+                        <h3 data-i18n="course.business1.title">Business English 1</h3>
+                        <p data-i18n="course.business1.description">
+                            Build a strong foundation for communication in the workplace, emails and meetings.
+                        </p>
+                        <a class="whatsapp-link" data-whatsapp
+                            data-message="Hello! I am interested in Business English 1."
+                            href="#contact">
+                            <span data-i18n="courses.learnMore">Learn more about this course</span> <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 07 BUSINESS 2 -->
+                <article class="course-card course-business-two">
+                    <div class="course-number" data-i18n="course.business2.number">07 · CAREER</div>
+                    <div class="course-visual visual-business-two">
+                        <span data-i18n="course.business2.title">Business English 2</span>
+                        <small data-i18n="course.business2.tagline">Communicate with impact</small>
+                    </div>
+                    <div class="course-copy">
+                        <h3 data-i18n="course.business2.title">Business English 2</h3>
+                        <p data-i18n="course.business2.description">
+                            Develop advanced language skills for presentations, negotiations and leadership.
+                        </p>
+                        <a class="whatsapp-link" data-whatsapp
+                            data-message="Hello! I am interested in Business English 2."
+                            href="#contact">
+                            <span data-i18n="courses.learnMore">Learn more about this course</span> <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 08 IT -->
+                <article class="course-card course-it">
+                    <div class="course-number" data-i18n="course.it.number">08 · TECHNOLOGY</div>
+                    <div class="course-visual visual-it">
+                        <span data-i18n="course.it.title">English for IT</span>
+                        <small data-i18n="course.it.tagline">Language for the digital world</small>
+                    </div>
+                    <div class="course-copy">
+                        <h3 data-i18n="course.it.title">English for IT</h3>
+                        <p data-i18n="course.it.description">
+                            Learn technical vocabulary and develop communication skills for the technology sector and IT careers.
+                        </p>
+                        <a class="whatsapp-link" data-whatsapp
+                            data-message="Hello! I am interested in the English for IT course."
+                            href="#contact">
+                            <span data-i18n="courses.learnMore">Learn more about this course</span> <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 09 TOURISM -->
+                <article class="course-card course-tourism">
+                    <div class="course-number" data-i18n="course.tourism.number">09 · HOSPITALITY AND TOURISM</div>
+                    <div class="course-visual visual-tourism">
+                        <span data-i18n="course.tourism.title">English for Tourism</span>
+                        <small data-i18n="course.tourism.tagline">Welcome the world</small>
+                    </div>
+                    <div class="course-copy">
+                        <h3 data-i18n="course.tourism.title">English for Tourism</h3>
+                        <p data-i18n="course.tourism.description">
+                            Practise the English used in travel, hotels, hospitality and customer service.
+                        </p>
+                        <a class="whatsapp-link" data-whatsapp
+                            data-message="Hello! I am interested in the English for Tourism course."
+                            href="#contact">
+                            <span data-i18n="courses.learnMore">Learn more about this course</span> <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 10 GRAMMAR -->
+                <article class="course-card course-grammar">
+                    <div class="course-number" data-i18n="course.grammar.number">10 · LANGUAGE SKILLS</div>
+                    <div class="course-visual visual-grammar">
+                        <span data-i18n="course.grammar.title">Grammar</span>
+                        <small data-i18n="course.grammar.tagline">Understand how English works</small>
+                    </div>
+                    <div class="course-copy">
+                        <h3 data-i18n="course.grammar.title">Grammar</h3>
+                        <p data-i18n="course.grammar.description">
+                            Strengthen your sentence structure, accuracy and confidence through the study of English grammar.
+                        </p>
+                        <a class="whatsapp-link" data-whatsapp
+                            data-message="Hello! I am interested in the Grammar course."
+                            href="#contact">
+                            <span data-i18n="courses.learnMore">Learn more about this course</span> <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <button class="carousel-arrow carousel-next" type="button"
+                aria-label="Next courses" id="programNext"
+                data-i18n-attr="aria-label:carousel.next">›</button>
+
+        </div>
+
+        <div class="carousel-dots" id="carouselDots"
+            aria-label="Carousel position"
+            data-i18n-attr="aria-label:carousel.position"></div>
+
+        <a class="btn trial-button whatsapp-link" data-whatsapp
+            data-message="Hello! I would like to book a free trial lesson at Link English."
+            href="#contact">
+            <span data-i18n="courses.bookTrial">Book your Free Trial Lesson</span> <span>↗</span>
+        </a>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="intro section-pad" id="about">
+
+        <div class="section-kicker" data-i18n="intro.kicker">WELCOME TO LINK ENGLISH</div>
+
+        <div class="intro-grid">
+
+            <h2 data-i18n="intro.title">
+                More than learning English.<br>
+                <span>It's opening new possibilities.</span>
+            </h2>
+
+            <div>
+                <p data-i18n="intro.description">
+                    We make learning English practical, welcoming and connected to the things that really matter in your life. Whether you are just starting out or looking to improve your level, your journey begins with a clear next step.
+                </p>
+
+                <a class="under-link whatsapp-link" data-whatsapp
+                    href="https://wa.me/258845441607">
+                    <span data-i18n="intro.link">Let's talk about your goals</span> <span>↗</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- METHOD -->
+    <section class="method section-pad">
+
+        <div class="method-visual">
+            <div class="method-photo"></div>
+
+            <div class="method-stamp">
+                <span data-i18n="method.stamp">SMALL STEPS.<br>REAL PROGRESS.</span>
+                <span>✳</span>
+            </div>
+        </div>
+
+        <div class="method-copy">
+
+            <div class="section-kicker" data-i18n="method.kicker">A BETTER WAY TO LEARN</div>
+
+            <h2 data-i18n="method.title">
+                Made for real life.<br>
+                <span>Designed for you.</span>
+            </h2>
+
+            <p data-i18n="method.description">
+                Learning works best when it aligns with your goals, your schedule and the way you want to use English.
+            </p>
+
+            <div class="method-list">
+
+                <div>
+                    <span>01</span>
+                    <section>
+                        <h3 data-i18n="method.oneTitle">Practical lessons</h3>
+                        <p data-i18n="method.oneText">
+                            Focus on the skills you need most, from everyday communication to professional growth.
+                        </p>
+                    </section>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <section>
+                        <h3 data-i18n="method.twoTitle">Active practice</h3>
+                        <p data-i18n="method.twoText">
+                            Use interactive activities and practical examples to turn knowledge into confidence.
+                        </p>
+                    </section>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <section>
+                        <h3 data-i18n="method.threeTitle">Real progress</h3>
+                        <p data-i18n="method.threeText">
+                            Celebrate every achievement and keep improving, one achievable step at a time.
+                        </p>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BENEFITS -->
+    <section class="benefits section-pad">
+
+        <div class="benefit">
+            <span>✦</span>
+            <h3 data-i18n="benefits.teachers">Qualified Teachers</h3>
+            <p data-i18n="benefits.teachersText">Learn with skilled and supportive teachers.</p>
+        </div>
+
+        <div class="benefit">
+            <span>▣</span>
+            <h3 data-i18n="benefits.flexible">Flexible Learning</h3>
+            <p data-i18n="benefits.flexibleText">Online or in-person lessons.</p>
+        </div>
+
+        <div class="benefit">
+            <span>↗</span>
+            <h3 data-i18n="benefits.progress">Real Progress</h3>
+            <p data-i18n="benefits.progressText">Build your skills step by step.</p>
+        </div>
+
+        <div class="benefit">
+            <span>◎</span>
+            <h3 data-i18n="benefits.community">A Welcoming Community</h3>
+            <p data-i18n="benefits.communityText">A learning community where everyone is welcome.</p>
+        </div>
+
+    </section>
+
+
+    <!-- SIGNUP -->
+    <section class="signup-banner">
+
+        <div>
+            <div class="section-kicker" data-i18n="signup.kicker">YOUR LEARNING JOURNEY</div>
+
+            <h2 data-i18n="signup.title">Don't have an account yet?</h2>
+
+            <p data-i18n="signup.description">
+                Create your Link English account and get ready to start your learning journey.
+            </p>
+
+            <a class="btn btn-gold" href="signup.html">
+                <span data-i18n="signup.button">Register for free</span> <span>↗</span>
+            </a>
+        </div>
+
+        <div class="signup-decoration" aria-hidden="true">
+            LE<br>
+            <span data-i18n="signup.decoration">Learn · Practise · Achieve</span>
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="cta-section" id="contact">
+
+        <div class="cta-pattern"></div>
+
+        <div class="cta-content">
+
+            <div class="section-kicker" data-i18n="contact.kicker">YOUR JOURNEY STARTS HERE</div>
+
+            <h2 data-i18n="contact.title">
+                Ready to make English<br>
+                work <em>for you?</em>
+            </h2>
+
+            <p data-i18n="contact.description">
+                Tell us what you want to achieve. We'll help you find your next step.
+            </p>
+
+            <a class="btn btn-white whatsapp-link" data-whatsapp
+                href="https://wa.me/258845441607">
+                <span data-i18n="contact.button">Talk to us</span> <span>↗</span>
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <a class="brand brand-footer" href="#home">
+        <img class="brand-logo" src="assets/link-english-logo.png" alt="Link English">
+    </a>
+
+    <p data-i18n="footer.tagline">English for your next step.</p>
+
+    <div class="footer-links">
+        <a href="#programs" data-i18n="nav.courses">Courses</a>
+        <a href="#method" data-i18n="nav.about">About us</a>
+        <a href="login.html" data-i18n="footer.portal">Student Portal</a>
+        <a href="signup.html" data-i18n="footer.createAccount">Create an account</a>
+    </div>
+
+    <small>
+        © <span id="year"></span> Link English.
+        <span data-i18n="footer.rights">All rights reserved.</span>
+    </small>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+<a class="floating-whatsapp whatsapp-link" data-whatsapp
+    href="https://wa.me/258845441607"
+    aria-label="Contact Link English on WhatsApp"
+    data-i18n-attr="aria-label:footer.whatsapp">
+    ✆
+</a>
+
+
+<script src="translations.js"></script>
+<script src="script.js"></script>
+<script src="course-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#14213d">
+
+    <title data-i18n="signup.pageTitle">
+        Create an account — Link English
+    </title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body class="login-page">
+
+    <!-- Language Selector -->
+    <div class="login-language-control">
+
+        <select
+            id="languageSelect"
+            class="language-select"
+            aria-label="Choose language"
+        >
+            <option value="en">🇬🇧 English</option>
+            <option value="pt">🇵🇹 Português</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="ru">🇷🇺 Русский</option>
+        </select>
+
+    </div>
+
+
+    <!-- Logo -->
+    <a class="brand login-brand" href="index.html">
+
+        <img
+            class="brand-logo"
+            src="assets/link-english-logo.png"
+            alt="Link English"
+        >
+
+    </a>
+
+
+    <main class="login-layout">
+
+        <!-- Promotional Panel -->
+        <section class="login-promo">
+
+            <div
+                class="section-kicker"
+                data-i18n="signup.promoKicker"
+            >
+                START YOUR JOURNEY
+            </div>
+
+            <h1 data-i18n="signup.promoTitle">
+                Learn. Practise.<br>
+                <span>Achieve.</span>
+            </h1>
+
+            <p data-i18n="signup.promoDescription">
+                Create your Link English account and take the next step
+                towards confident communication.
+            </p>
+
+            <div class="login-deco">
+                <span data-i18n="common.learn">LEARN</span>
+                <span>↗</span>
+                <span data-i18n="common.grow">GROW</span>
+                <span>↗</span>
+                <span data-i18n="common.connect">CONNECT</span>
+            </div>
+
+        </section>
+
+
+        <!-- Registration Panel -->
+        <section class="login-panel">
+
+            <div class="login-box">
+
+                <div
+                    class="section-kicker"
+                    data-i18n="signup.formKicker"
+                >
+                    NEW STUDENT REGISTRATION
+                </div>
+
+                <h2 data-i18n="signup.heading">
+                    Create your account
+                </h2>
+
+                <p
+                    class="login-muted"
+                    data-i18n="signup.description"
+                >
+                    Enter your details to get started. Your account
+                    will be activated once registration is connected
+                    to the student management system.
+                </p>
+
+
+                <!-- Registration Form -->
+                <form id="signupForm">
+
+                    <!-- Full Name -->
+                    <label
+                        for="fullName"
+                        data-i18n="signup.fullName"
+                    >
+                        Full name
+                    </label>
+
+                    <input
+                        id="fullName"
+                        name="fullName"
+                        type="text"
+                        placeholder="Your full name"
+                        data-i18n-placeholder="signup.fullNamePlaceholder"
+                        required
+                        autocomplete="name"
+                    >
+
+
+                    <!-- Email -->
+                    <label
+                        for="signupEmail"
+                        data-i18n="signup.email"
+                    >
+                        Email address
+                    </label>
+
+                    <input
+                        id="signupEmail"
+                        name="email"
+                        type="email"
+                        placeholder="you@example.com"
+                        data-i18n-placeholder="signup.emailPlaceholder"
+                        required
+                        autocomplete="email"
+                    >
+
+
+                    <!-- Phone Number -->
+                    <label
+                        for="signupPhone"
+                        data-i18n="signup.phone"
+                    >
+                        WhatsApp / phone number
+                    </label>
+
+                    <input
+                        id="signupPhone"
+                        name="phone"
+                        type="tel"
+                        placeholder="e.g. +258 8X XXX XXXX"
+                        data-i18n-placeholder="signup.phonePlaceholder"
+                        required
+                        autocomplete="tel"
+                    >
+
+
+                    <!-- Password -->
+                    <label
+                        for="signupPassword"
+                        data-i18n="signup.password"
+                    >
+                        Create password
+                    </label>
+
+                    <input
+                        id="signupPassword"
+                        name="password"
+                        type="password"
+                        placeholder="At least 8 characters"
+                        data-i18n-placeholder="signup.passwordPlaceholder"
+                        minlength="8"
+                        required
+                        autocomplete="new-password"
+                    >
+
+
+                    <!-- Confirm Password -->
+                    <label
+                        for="confirmPassword"
+                        data-i18n="signup.confirmPassword"
+                    >
+                        Confirm password
+                    </label>
+
+                    <input
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        type="password"
+                        placeholder="Enter your password again"
+                        data-i18n-placeholder="signup.confirmPasswordPlaceholder"
+                        minlength="8"
+                        required
+                        autocomplete="new-password"
+                    >
+
+
+                    <!-- Submit Button -->
+                    <button
+                        class="btn login-submit"
+                        type="submit"
+                    >
+                        <span data-i18n="signup.submit">
+                            Create account
+                        </span>
+                        <span>↗</span>
+                    </button>
+
+
+                    <!-- Form Feedback -->
+                    <p
+                        id="signupMessage"
+                        class="login-message"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+
+                <!-- Login Link -->
+                <div class="login-help">
+
+                    <span data-i18n="signup.alreadyHaveAccount">
+                        Already have an account?
+                    </span>
+
+                    <a
+                        href="login.html"
+                        data-i18n="signup.loginLink"
+                    >
+                        Sign in
+                    </a>
+
+                </div>
+
+
+                <!-- Back to Homepage -->
+                <a
+                    class="back-link"
+                    href="index.html"
+                    data-i18n="signup.backHome"
+                >
+                    ← Back to Link English
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="translations.js"></script>
+    <script src="signup.js"></script>
+
+</body>
+</html>
